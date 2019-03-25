@@ -1,0 +1,8 @@
+.rainbow-header{
+    background-image: url(/assets/images/rainbowheader.jpg);
+    background-size: 100%;
+    height: 5px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
