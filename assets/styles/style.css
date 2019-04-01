@@ -1,3 +1,69 @@
+/* styling for home page header */
+.header{
+    position: relative;
+    display: block;
+  }
+  .sticky-top{
+      position: sticky;
+  }
+  .hdr-wrap{
+    position: relative;
+  }
+  .title-wrap{
+    display: block;
+    height: 550px;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+  }
+/* img.img-src{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 0;
+    width: 100%;
+    height: 622px;
+} */
+h3{
+    color: black;
+}
+  .content{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 2;
+  }
+  .text-content{
+    height: 100%;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+  }
+  .caption-fade-in{
+    position: absolute;
+    top: 10%;
+    right: 0;
+    bottom: 55px;
+    left:0;
+    visibility: visible;
+    opacity: 1;
+    text-align: center;
+    font-size: 24px;
+    line-height: 1;
+    color: #fff;
+  
+  }
+  .caption-fade-in h1{
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 1;
+  }
 .rainbow-header{
     background-image: url(/assets/images/rainbowheader.jpg);
     background-size: 100%;
@@ -6,33 +72,56 @@
     position: relative;
     z-index: 1;
 }
-#contact-form{
-    width: 600px;
+.main-container{
+    width: 875px;
     margin: auto;
 }
 #posts{
     width: 600px;
 }
-/* .carousel-inner{
-    width: 730px;
-    height: 450px;
-} */
 .btn.btn-outline-info{
     margin-left: 5px;
 }
-/* footer{
-    fix footer situation
-width:100%;
-height:236px;
-position:fixed;
-bottom:0;
-left:0;
-} */
+.triangle {
+  align-items: center;
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 40px solid #17a2b8;
+}
+.fa{
+  color: white;
+}
+.text-center{
+  margin: auto;
+}
+.top-page {
+  display: inline-block;
+  margin-left: -8px;
+  margin-top: 15px;
+}
+.copy-right{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+footer{
+  /* position: relative; */
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+}
+.row.row-footer{
+    margin-right: 0;
+    margin-left: 0;
+}
 
 @media screen and (max-width: 600px){
     #contact-form{
         width: 450px;
         margin: auto;
     }
-
 }
