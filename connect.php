@@ -16,10 +16,10 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     
     <style>
-    body{
-        font-family: 'Nanum Myeongjo', serif;
-
-    }
+            body{
+                font-family: 'Nanum Myeongjo', serif;
+        
+            }
     </style>
         <script>
             $(document).ready(function(){
@@ -78,19 +78,38 @@
 </nav>
 <div class="rainbow-header"></div>
 <br>
-<!-- Main Content -->
-<div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h1>HELLO!</h1>
-                <h4>This page is currently under construction.</h4>
-                <h4>Check back soon!</h4>
-                <img class="under-construction d-block w-100" src="/assets/images/under-construction.jpg" alt="Under construction">
-                <a href="index.html">Back to home page</a>
+<!-- contact form -->
+<br>
+<div class="main-container">
+    <div class="container-fluid">
+    <form id="contact-form" method="post" action="form.php">
+        <h5>Want to know more? Shoot us an email!</h5>
+        <br>
+        <div class="form-row">
+          <div class="col-md-6">
+            <input type="text" name="first_name" class="form-control" placeholder="First name">
+          </div>
+          <div class="col-md-6">
+            <input type="text" name="last_name" class="form-control" placeholder="Last name">
+          </div>
+        </div>
+        <br>
+        <div class="form-row">
+            <div class="col-md-12">
+                <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
+                <br>
+                <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3" placeholder="Your Message"></textarea>
             </div>
         </div>
-    </div>
+        <br>
+        <div class="form-row">
+            <button type="button" name="submit" class="btn btn-outline-info">Submit</button>
+        </div>
+    </form> 
+    </div>  
+</div>
 <br>
+
 <!-- Footer -->
 <footer>
         <div class="row row-footer text-center text-md-left">
@@ -145,9 +164,16 @@
             </div>
         </div>
     </footer>
+
     <!-- Popper -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <!-- Bootstrap JS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
+
+
+
+
+
+

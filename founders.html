@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo:400,700" rel="stylesheet">
+    <!-- Jquery  -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     
     <style>
     body{
@@ -19,10 +21,30 @@
 
     }
     </style>
+        <script>
+            $(document).ready(function(){
+                // Add smooth scrolling to all links
+                $("a").on('click', function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+            
+                    // Store hash
+                    var hash = this.hash;
+        
+                    $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                    }, 650, function(){
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                    });
+                } // End if
+                });
+            });
+        </script>
 </head>
 <body>
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light" style="background: #ffffff !important;">
+<nav class="navbar navbar-expand-lg navbar-light bg-light" id="top" style="background: #ffffff !important;">
         <div class="d-flex flex-grow-1">
             <span class="w-100 d-lg-none d-block"><!-- hidden spacer to center brand on mobile --></span>
             <a class="navbar-brand d-none d-lg-inline-block" href="index.html">
@@ -49,7 +71,7 @@
                     <a href="donate.html" class="nav-link m-2 menu-item">Donate</a>
                 </li>
                 <li class="nav-item">
-                    <a href="connect.html" class="nav-link m-2 menu-item">Connect</a>
+                    <a href="connect.php" class="nav-link m-2 menu-item">Connect</a>
                 </li>
             </ul>
         </div>
@@ -62,56 +84,71 @@
     <!-- person 1 -->
     <div class="row">
         <div class="col-sm-8 col-md-8">
-            <strong>Name</strong>
-            <p>Disrupt jean shorts viral hella meh, plaid cupidatat magna art party. Echo Park adipisicing literally narwhal. Williamsburg leggings church-key, craft beer forage cornhole jean shorts blue bottle pariatur. Officia sapiente bespoke, locavore plaid cray voluptate deep v ex vinyl tote bag chillwave swag occaecat. Sed banh mi 3 wolf moon single-origin coffee quis tempor. Hoodie pitchfork pork belly aliqua, shabby chic elit consequat freegan ethical try-hard mixtape. Schlitz banjo deep v ullamco blog, umami nulla sint elit skateboard Godard odio</p>
+            <h3>Inoru Wade</h3>
+            <h5>Executive Director</h5>
+            <p>Inoru Wade, a nonbinary Kansas City Native received their Bachelor’s in East Asian Languages and Cultures and International Policy and a Master’s in Public Affairs and Administration from the University of Kansas. The emphasis of their studies and research focused on LGBTQ+ related issues and policy. Their published research in academic journals on LGBTQ+ issues has taken them to multiple national conferences teaching various governments, nonprofits, and working professionals about the issues that affect the LGBTQ+ community. Upon graduating he noticed a lack of research being done throughout the Midwest on the issues and affairs affecting the community. They have served the Kansas City Metropolitan Area LGBTQ+ community through their policy work with local cities and counties in an advisory role.</p>
         </div>
         <div class="col-sm-4 col-md-4">
-          <img src="/assets/images/logo-transparent.png" class="rounded-circle" width="250" height="250">
+          <img src="/assets/images/inoru_wade.JPG" class="d-block w-100">
         </div>
     </div>
     <hr>
     <!-- person 2 -->
     <div class="row">
         <div class="col-sm-4 col-md-4">
-            <img src="/assets/images/logo-transparent.png" class="rounded-circle" width="250" height="250">
-        </div>
+            <img src="/assets/images/ash_viglino.jpg" class="d-block w-100">
+        </div> 
         <div class="col-sm-8 col-md-8">
-            <strong>Name</strong>
-            <p>Disrupt jean shorts viral hella meh, plaid cupidatat magna art party. Echo Park adipisicing literally narwhal. Williamsburg leggings church-key, craft beer forage cornhole jean shorts blue bottle pariatur. Officia sapiente bespoke, locavore plaid cray voluptate deep v ex vinyl tote bag chillwave swag occaecat. Sed banh mi 3 wolf moon single-origin coffee quis tempor. Hoodie pitchfork pork belly aliqua, shabby chic elit consequat freegan ethical try-hard mixtape. Schlitz banjo deep v ullamco blog, umami nulla sint elit skateboard Godard odio</p>
-        </div>
-
+            <h3>Ash Viglino</h3>
+            <h5>Graphic Designer</h5>
+            <p>Ash Viglino, a transmasculine Florida transplant, has called the KC Northland home since 2002 and prefers he/him/they/them pronouns. He currently works as a freelance artist for character and story illustrations, as well as being a tobacco harm reduction advocate. Ash is self-taught digital illustrator and self-proclaimed nerd who's current project is a historical fantasy comic inspired by the 1930's and Kansas City's jazz and prohibition history. He serves as the in-house graphic designer for Midwest Rainbow Research Institute, creating bold and inspiring works to represent the LGBTQ+ community.</p>        </div>
     </div>
     <hr>
     <!-- person 3 -->
     <div class="row">
         <div class="col-sm-8 col-md-8">
-            <strong>Name</strong>
-            <p>Disrupt jean shorts viral hella meh, plaid cupidatat magna art party. Echo Park adipisicing literally narwhal. Williamsburg leggings church-key, craft beer forage cornhole jean shorts blue bottle pariatur. Officia sapiente bespoke, locavore plaid cray voluptate deep v ex vinyl tote bag chillwave swag occaecat. Sed banh mi 3 wolf moon single-origin coffee quis tempor. Hoodie pitchfork pork belly aliqua, shabby chic elit consequat freegan ethical try-hard mixtape. Schlitz banjo deep v ullamco blog, umami nulla sint elit skateboard Godard odio</p>
+            <h3>Perla Ordonez</h3>
+            <h5>Web Developer</h5>
+            <p>Perla is a full stack web developer native to Kansas City. She is excited to take on free lance projects and work with local organizations that strive to make an impact on her local community such as Midwest Rainbow Research Insitute. </p>
         </div>
         <div class="col-sm-4 col-md-4">
-            <img src="/assets/images/logo-transparent.png" class="rounded-circle" width="250" height="250">
+            <img src="/assets/images/perla_ordonez.JPG" class="d-block w-100">
         </div>
     </div>
     <hr>
     <!-- person 4 -->
     <div class="row">
         <div class="col-sm-4 col-md-4">
-            <img src="/assets/images/logo-transparent.png" class="rounded-circle" width="250" height="250">
+            <img src="/assets/images/zachary_mallory.jpg" class="d-block w-100">
         </div>
         <div class="col-sm-8 col-md-8">
-            <strong>Name</strong>
-            <p>Disrupt jean shorts viral hella meh, plaid cupidatat magna art party. Echo Park adipisicing literally narwhal. Williamsburg leggings church-key, craft beer forage cornhole jean shorts blue bottle pariatur. Officia sapiente bespoke, locavore plaid cray voluptate deep v ex vinyl tote bag chillwave swag occaecat. Sed banh mi 3 wolf moon single-origin coffee quis tempor. Hoodie pitchfork pork belly aliqua, shabby chic elit consequat freegan ethical try-hard mixtape. Schlitz banjo deep v ullamco blog, umami nulla sint elit skateboard Godard odio</p>
+            <h3>Zachary Mallory</h3>
+            <h5>Board of Director: Chair</h5>
+            <p>Zachary Mallory is a proud, loud and out Non Binary LGBTQ+ advocate that focuses directly on the youth and young adult population. Zachary uses They/Them or He/Him pronouns. As a advocate in the LGBTQ+ community, Zachary has had numerous opportunities to share his own personal story including receiving the Spirit of Matthew Award in 2016 from the Matthew Shepard Foundation, and spearheading a conversation about mental health and suicide prevention with the Human Rights Campaign as a National Youth Ambassador for the past two years. Zachary is a 4 time suicide attempt survivor and a survivor of Conversion Therapy. Zachary is dedicated to helping others and to raise awareness about the issues affecting the LGBTQ+ community. Zachary is currently working on the production of a upcoming docu series called Q.Series: Conversion Therapy. This docu series will highlight the stories of other survivors of conversion therapy and will serve as a national call to put a end to the dangerous "practice". Zachary is serving as a board member for the Midwest Rainbow Research Institute in hopes to highlight important key findings by doing research and education within the LGBTQ+ community in the Midwest.</p>
         </div>
     </div>
     <hr>
     <!-- person 5 -->
     <div class="row">
         <div class="col-sm-8 col-md-8">
-            <strong>Name</strong>
-            <p>Disrupt jean shorts viral hella meh, plaid cupidatat magna art party. Echo Park adipisicing literally narwhal. Williamsburg leggings church-key, craft beer forage cornhole jean shorts blue bottle pariatur. Officia sapiente bespoke, locavore plaid cray voluptate deep v ex vinyl tote bag chillwave swag occaecat. Sed banh mi 3 wolf moon single-origin coffee quis tempor. Hoodie pitchfork pork belly aliqua, shabby chic elit consequat freegan ethical try-hard mixtape. Schlitz banjo deep v ullamco blog, umami nulla sint elit skateboard Godard odio</p>
+            <h3>Sean Serroque</h3>
+            <h5>Board of Director: Treasurer </h5>
+            <p>Sean is a banking professional in Kansas City and a lifetime Missouri Resident with a passion  for community involvement. He has served in many organizations including charities, scouts, environmental organizations, and more. He has seen many of his organizations go through changes in policy towards the LGBTQ community and he hopes to bring his organizational experience and financial expertise to the team. </p>
         </div>
         <div class="col-sm-4 col-md-4">
-            <img src="/assets/images/logo-transparent.png" class="rounded-circle" width="250" height="250">
+            <img src="/assets/images/sean_serroque.jpeg" class="d-block w-100">
+        </div>
+    </div>
+    <hr>
+    <!-- peson 6 -->
+    <div class="row">
+        <div class="col-sm-4 col-md-4">
+            <img src="/assets/images/shana_hart.jpg" class="d-block w-100">
+        </div>
+        <div class="col-sm-8 col-md-8">
+            <h3>Shana Hart</h3>
+            <h5>Board of Director: Secretary</h5>
+            <p>Shana Hart is a non-binary Kansas Citian who uses any pronouns as long as they are said with respect. She is an expert in the world of cosmetics and is busy building her very own beauty line. As a non-binary individual working in the world of cosmetics, Shana became a champion for the transgender community as they sought out products and services that would make them feel more aligned with their gender. With her spare time, she dedicates her self to helping those wishing to transition with various products that will bring about an individual’s feminine or masculine expression. She serves on the board of the Midwest rainbow research institute in hopes of uncovering data and research that will help create a culture and climate of acceptance and inclusion for all LGBTQ+ people so they may pursue their own dreams.</p>
         </div>
     </div> 
 </div>   
@@ -142,7 +179,9 @@
             <div class="col-md-4">
                 <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
                 <p><i class="fas fa-home mr-3"></i> Kansas City, MO</p>
-                <p><i class="fas fa-envelope mr-3"></i> inoru@midwestrainbow.org</p>
+                <a href="mailto:inoru@midwestrainbow.org">
+                    <p><i class="fas fa-envelope mr-3"></i> inoru@midwestrainbow.org</p>
+                </a>
             </div>
         <!--Copy right  -->
             <div class="col-md-4">
@@ -169,8 +208,6 @@
             </div>
         </div>
     </footer>
-    <!-- Jquery  -->
-    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <!-- Popper -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <!-- Bootstrap JS -->
