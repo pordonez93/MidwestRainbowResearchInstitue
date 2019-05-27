@@ -67,12 +67,23 @@
                 <li class="nav-item">
                         <a href="founders.html" class="nav-link m-2 menu-item">Founders</a>
                     </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle m-2 animated fadeIn" data-toggle="dropdown" href="sponsorship.html" role="button" aria-haspopup="true" aria-expanded="false">Sponsorship</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="sponsorship.html">Become a Sponsor</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="currentsponsors.html">Current Sponsors</a>
+                        </div>
+                    </li>
                 <li class="nav-item">
-                    <a href="donate.html" class="nav-link m-2 menu-item">Donate</a>
+                    <a href="connect.html" class="nav-link m-2 menu-item">Connect</a>
                 </li>
-                <li class="nav-item">
-                    <a href="connect.php" class="nav-link m-2 menu-item">Connect</a>
-                </li>
+                <form class="animated fadeIn" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_s-xclick" />
+                    <input type="hidden" name="hosted_button_id" value="34PMY7YFCT7RG" />
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                    <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+                </form>
             </ul>
         </div>
 </nav>

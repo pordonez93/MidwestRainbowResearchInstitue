@@ -83,18 +83,32 @@
                 <li class="nav-item">
                     <a class="nav-link animated fadeIn" href="founders.html">Founders</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link animated fadeIn" href="donate.html">Donate</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle animated fadeIn" data-toggle="dropdown" href="sponsorship.html" role="button" aria-haspopup="true" aria-expanded="false">Sponsorship</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="sponsorship.html">Become a Sponsor</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="currentsponsors.html">Current Sponsors</a>
+                    </div>
                 </li>
+
                 <li class="nav-item">
-                    <a class="nav-link animated fadeIn" href="connect.php">Connect</a>
+                    <a class="nav-link animated fadeIn" href="connect.html">Connect</a>
                 </li>
+                <!-- <li class="nav-item"> -->
+                        <form class="animated fadeIn" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <input type="hidden" name="cmd" value="_s-xclick" />
+                            <input type="hidden" name="hosted_button_id" value="34PMY7YFCT7RG" />
+                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                            <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+                        </form>  
+                <!-- </li> -->
             </ul>
         </div>
     </div>
 </nav>
 <!-- Rainbow header -->
-<div class="rainbow-header sticky-top"></div>
+<div class="rainbow-header"></div>
 <!-- Main Content -->
 <div class="main-container" >
     <div class="container-fluid" id="mission">
