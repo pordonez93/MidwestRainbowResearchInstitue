@@ -129,8 +129,14 @@ form{
   left: 0;
   right: 0;
 }
-iframe#contact-form{
-  margin: auto auto;
+.sr-add{
+  color: #17a2b8 !important;
+}
+.sr-default, .sr-buy-widget, .sr-add{
+  border: #17a2b8 !important;
+}
+i.fa.fa-shopping-cart{
+  color: #17a2b8;
 }
 footer{
 /* position: relative; */
