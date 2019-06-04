@@ -152,6 +152,20 @@ footer{
   margin-right: 0;
   margin-left: 0;
 }
+.formEmbed{
+  position: relative;
+  width: 100%;
+  min-height: 900px;
+  text-align: left;
+}
+.formEmbed iframe{
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+#pubDownload{
+  display: inline-block;
+}
 /* sponsorship levels */
 .sponsorLevel{
   width: 125px;
