@@ -44,55 +44,75 @@
 </head>
 <body>
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light" id="top" style="background: #ffffff !important;">
+<nav class="navbar navbar-expand-sm navbar-light bg-light" id="top" style="background: #ffffff !important;">
         <div class="d-flex flex-grow-1">
-            <span class="w-100 d-lg-none d-block"><!-- hidden spacer to center brand on mobile --></span>
-            <a class="navbar-brand d-none d-lg-inline-block" href="index.html">
-                <img src="/assets/images/MRRI-horizontaltransparent.png" alt="logo" width="285" height="100">
-            </a>
-            <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="index.html">
-                <img src="/assets/images/MRRI-verticaltransparent.png" alt="logo" width="75" height="75">
-            </a>
-            <div class="w-100 text-right">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <span class="w-100 d-lg-none d-block"><!-- hidden spacer to center brand on mobile --></span>
+                <a class="navbar-brand d-none d-lg-inline-block" href="index.html">
+                    <img src="/assets/images/MRRI-horizontaltransparent.png" alt="logo" width="285" height="100">
+                </a>
+                <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="index.html">
+                    <img src="/assets/images/MRRI-verticaltransparent.png" alt="logo" width="75" height="75">
+                </a>
+                <div class="w-100 text-right">
+                </div>
             </div>
+    <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <!-- About tab -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle animated fadeIn" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    About
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#mission">Mission</a>
+                    <a class="dropdown-item" href="#vision">Vision</a>
+                    <a class="dropdown-item" href="founders.html">Founders</a>
+                </div>
+            </li> 
+            <!-- What we do -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle animated fadeIn" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    What We Do
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="publications.html">Publications</a>
+                    <a class="dropdown-item" href="training.html">Training</a>
+                    <a class="dropdown-item" href="events.html">Events</a>
+                </div>
+            </li> 
+            <!-- Sponsorship -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle animated fadeIn" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Sponsorship
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="sponsorship.html">Become a Sponsor</a>
+                    <a class="dropdown-item" href="currentsponsors.html">Current Sponsors</a>
+                </div>
+            </li>
+             <!-- Connect tab-->
+            <li class="nav-item">
+              <a class="nav-link animated fadeIn" href="connect.html">Connect</a>
+            </li>
+            <!-- Shop tab-->
+            <li class="nav-item">
+              <a class="nav-link animated fadeIn" href="shop.html">Shop</a>
+            </li>
+            <!-- Donate tab -->
+            <form class="animated fadeIn" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick" />
+                <input type="hidden" name="hosted_button_id" value="34PMY7YFCT7RG" />
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+            </form>
+          </ul>
+          </div>
         </div>
-        <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
-            <ul class="navbar-nav ml-auto flex-nowrap">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link m-2 menu-item nav-active">Home</a>
-                </li>
-                <li class="nav-item">
-                        <a href="publications.html" class="nav-link m-2 menu-item nav-active">Publications</a>
-                </li>
-                <li class="nav-item">
-                        <a href="founders.html" class="nav-link m-2 menu-item">Founders</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle m-2 animated fadeIn" data-toggle="dropdown" href="sponsorship.html" role="button" aria-haspopup="true" aria-expanded="false">Sponsorship</a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="sponsorship.html">Become a Sponsor</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="currentsponsors.html">Current Sponsors</a>
-                            </div>
-                        </li>
-                <li class="nav-item">
-                    <a href="connect.html" class="nav-link m-2 menu-item">Connect</a>
-                </li>
-                <li class="nav-item">
-                        <a class="nav-link m-2 menu-item" href="shop.html">Shop</a>
-                    </li>
-                <form class="animated fadeIn" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                    <input type="hidden" name="cmd" value="_s-xclick" />
-                    <input type="hidden" name="hosted_button_id" value="34PMY7YFCT7RG" />
-                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-                    <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-                </form>
-            </ul>
-        </div>
-</nav>
+      </nav>
 <div class="rainbow-header"></div>
 <br>
 <!-- Main Content -->
@@ -148,25 +168,38 @@
     <!-- person 5 -->
     <div class="row">
         <div class="col-sm-8 col-md-8">
+            <h3>Taryn Jones</h3>
+            <h5>Board of Director: Chair</h5>
+            <p>Taryn is a lifelong Kansas resident. She graduated from Pittsburg State University in 2010 with a degree in social work. She has been working in mental health and then in family preservation. In August 2018 she decided to go back to school for her master’s in social work with an emphasis in grant writing and public policy. Taryn is passionate about advocating for social change. She has been a volunteer at Midwest Rainbow before becoming a board member and is part of the Metro KC Climate Action Coalition. She recently ran for City Council in Overland Park on a platform of equality for all residents.  </p>
+        </div>
+        <div class="col-sm-4 col-md-4">
+                <img src="/assets/images/taryn_jones.JPG" class="d-block w-100">
+            </div>
+    </div> 
+    <hr>
+    <!-- person 6 -->
+    <div class="row">
+        <div class="col-sm-4 col-md-4">
+            <img src="/assets/images/sean_serroque.jpeg" class="d-block w-100">
+        </div>
+        <div class="col-sm-8 col-md-8">
             <h3>Sean Serroque</h3>
             <h5>Board of Director: Treasurer </h5>
             <p>Sean is a banking professional in Kansas City and a lifetime Missouri Resident with a passion  for community involvement. He has served in many organizations including charities, scouts, environmental organizations, and more. He has seen many of his organizations go through changes in policy towards the LGBTQ community and he hopes to bring his organizational experience and financial expertise to the team. </p>
         </div>
-        <div class="col-sm-4 col-md-4">
-            <img src="/assets/images/sean_serroque.jpeg" class="d-block w-100">
-        </div>
+
     </div>
     <hr>
-    <!-- peson 6 -->
+    <!-- peson 7 -->
     <div class="row">
-        <div class="col-sm-4 col-md-4">
-            <img src="/assets/images/shana_hart.jpg" class="d-block w-100">
-        </div>
         <div class="col-sm-8 col-md-8">
             <h3>Shana Hart</h3>
             <h5>Board of Director: Secretary</h5>
             <p>Shana Hart is a non-binary Kansas Citian who uses any pronouns as long as they are said with respect. She is an expert in the world of cosmetics and is busy building her very own beauty line. As a non-binary individual working in the world of cosmetics, Shana became a champion for the transgender community as they sought out products and services that would make them feel more aligned with their gender. With her spare time, she dedicates her self to helping those wishing to transition with various products that will bring about an individual’s feminine or masculine expression. She serves on the board of the Midwest rainbow research institute in hopes of uncovering data and research that will help create a culture and climate of acceptance and inclusion for all LGBTQ+ people so they may pursue their own dreams.</p>
         </div>
+        <div class="col-sm-4 col-md-4">
+                <img src="/assets/images/shana_hart.jpg" class="d-block w-100">
+            </div>
     </div> 
 </div>   
 </div>

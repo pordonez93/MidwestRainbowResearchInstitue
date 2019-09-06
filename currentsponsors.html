@@ -44,66 +44,115 @@
 </head>
 <body>
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light" id="top" style="background: #ffffff !important;">
+<nav class="navbar navbar-expand-sm navbar-light bg-light" id="top" style="background: #ffffff !important;">
         <div class="d-flex flex-grow-1">
-            <span class="w-100 d-lg-none d-block"><!-- hidden spacer to center brand on mobile --></span>
-            <a class="navbar-brand d-none d-lg-inline-block" href="index.html">
-                <img src="/assets/images/MRRI-horizontaltransparent.png" alt="logo" width="285" height="100">
-            </a>
-            <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="index.html">
-                <img src="/assets/images/MRRI-verticaltransparent.png" alt="logo" width="40" height="40">
-            </a>
-            <div class="w-100 text-right">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <span class="w-100 d-lg-none d-block"><!-- hidden spacer to center brand on mobile --></span>
+                <a class="navbar-brand d-none d-lg-inline-block" href="index.html">
+                    <img src="/assets/images/MRRI-horizontaltransparent.png" alt="logo" width="285" height="100">
+                </a>
+                <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="index.html">
+                    <img src="/assets/images/MRRI-verticaltransparent.png" alt="logo" width="75" height="75">
+                </a>
+                <div class="w-100 text-right">
+                </div>
             </div>
+    <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <!-- About tab -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle animated fadeIn" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    About
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#mission">Mission</a>
+                    <a class="dropdown-item" href="#vision">Vision</a>
+                    <a class="dropdown-item" href="founders.html">Founders</a>
+                </div>
+            </li> 
+            <!-- What we do -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle animated fadeIn" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    What We Do
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="publications.html">Publications</a>
+                    <a class="dropdown-item" href="training.html">Training</a>
+                    <a class="dropdown-item" href="events.html">Events</a>
+                </div>
+            </li> 
+            <!-- Sponsorship -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle animated fadeIn" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Sponsorship
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="sponsorship.html">Become a Sponsor</a>
+                    <a class="dropdown-item" href="currentsponsors.html">Current Sponsors</a>
+                </div>
+            </li>
+             <!-- Connect tab-->
+            <li class="nav-item">
+              <a class="nav-link animated fadeIn" href="connect.html">Connect</a>
+            </li>
+            <!-- Shop tab-->
+            <li class="nav-item">
+              <a class="nav-link animated fadeIn" href="shop.html">Shop</a>
+            </li>
+            <!-- Donate tab -->
+            <form class="animated fadeIn" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick" />
+                <input type="hidden" name="hosted_button_id" value="34PMY7YFCT7RG" />
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+            </form>
+          </ul>
+          </div>
         </div>
-        <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
-            <ul class="navbar-nav ml-auto flex-nowrap">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link m-2 menu-item nav-active">Home</a>
-                </li>
-                <li class="nav-item">
-                        <a href="publications.html" class="nav-link m-2 menu-item nav-active">Publications</a>
-                </li>
-                <li class="nav-item">
-                        <a href="founders.html" class="nav-link m-2 menu-item">Founders</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle m-2 animated fadeIn" data-toggle="dropdown" href="sponsorship.html" role="button" aria-haspopup="true" aria-expanded="false">Sponsorship</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="sponsorship.html">Become a Sponsor</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="currentsponsors.html">Current Sponsors</a>
-                        </div>
-                    </li>
-                <li class="nav-item">
-                    <a href="connect.html" class="nav-link m-2 menu-item">Connect</a>
-                </li>
-                <li class="nav-item">
-                        <a class="nav-link m-2 menu-item" href="shop.html">Shop</a>
-                </li>
-                <form class="animated fadeIn" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                    <input type="hidden" name="cmd" value="_s-xclick" />
-                    <input type="hidden" name="hosted_button_id" value="34PMY7YFCT7RG" />
-                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-                    <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-                </form>
-            </ul>
-        </div>
-</nav>
+      </nav>
 <div class="rainbow-header"></div>
 <br>
-<!-- Main Content -->
-<div class="container">
+    <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h1>HELLO!</h1>
-                <h4>This page is currently under construction.</h4>
-                <h4>Check back soon!</h4>
-                <img class="under-construction d-block w-100" src="/assets/images/under-construction.jpg" alt="Under construction">
-                <a href="index.html">Back to home page</a>
+                <h1>THANK YOU TO ALL OF OUR SPONSORS!</h1>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="SponsorLevel text-center">
+                <img class="ColorLevel" src="assets/images/pink.jpg" alt="pink level" width="525" height="35">
+                <p class="Level text-center">Pink Level Sponsors</p>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-4">
+                <p> Ash Viglino Liberty, MO</p>
+                <p>Amy Johnson Warrensburg, MO</p>
+                <p>Kimberly Egleston</p>
+            </div>
+            <div class="col-md-4">
+                <p> Josh Smith Kansas City, MO</p>
+                <p> Gavin Kolasa Kansas City, MO</p>
+            </div>
+            <div class="col-md-4">
+                <p>Matthew Hawkins Kansas City, KS</p>
+                <p>Darcassian Clinton, MO</p>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="SponsorLevel text-center">
+                <img class="ColorLevel" src="assets/images/blue.png" alt="pink level" width="525" height="35">
+                <p class="Level text-center">Blue Level Sponsors</p>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-4">
+                <p>Janet Benson Kansas City, MO</p>
             </div>
         </div>
     </div>

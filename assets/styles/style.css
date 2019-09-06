@@ -186,6 +186,25 @@ footer{
   border-radius: 35px 0px 35px 0px;
   box-shadow: 4px 7px 14px -3px rgba(0,0,0,0.58);
 }
+.SponsorLevel{
+  width: 525px;
+  height: auto;
+  position: relative;
+}
+.Level{
+  position: absolute;
+  top: 25%;
+  left: 0;
+  bottom: 5%;
+  right: 0;
+  color: white;
+  font-weight: bold;
+}
+.ColorLevel{
+  border: 5px solid #FFFFFF;
+  border-radius: 35px 0px 35px 0px;
+  box-shadow: 4px 7px 14px -3px rgba(0,0,0,0.58);
+}
 @media screen and (min-width: 991px){
   #contact-form{
     width: 650px;

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>MRRI</title>
+    <title>Midwest Rainbow</title>
     <link rel="stylesheet" href="assets/styles/style.css">
     <!-- Bootstrap CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -16,10 +16,10 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     
     <style>
-            body{
-                font-family: 'Nanum Myeongjo', serif;
-        
-            }
+    body{
+        font-family: 'Nanum Myeongjo', serif;
+
+    }
     </style>
         <script>
             $(document).ready(function(){
@@ -44,7 +44,7 @@
 </head>
 <body>
 <!-- Navbar -->
-<nav class="navbar navbar-expand-sm navbar-light bg-light" id="top" style="background: #ffffff !important;">
+<nav class="navbar sticky-top navbar-expand-sm navbar-light bg-light" style="background: #ffffff !important;">
         <div class="d-flex flex-grow-1">
                 <span class="w-100 d-lg-none d-block"><!-- hidden spacer to center brand on mobile --></span>
                 <a class="navbar-brand d-none d-lg-inline-block" href="index.html">
@@ -113,35 +113,28 @@
           </div>
         </div>
       </nav>
+
 <div class="rainbow-header"></div>
 <br>
-<!-- Shop Rocket -->
+<!-- Main Content -->
 <div class="main-container">
-    <div class="containerFluid">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-md-12">
-                <!-- SHOPROCKET SR-BLOCK START -->
-                    <div class="sr-block sr-default" sr-meta="" sr-show-max="99" style="visibility: hidden;">
-                        <div class="sr-item sr-buy-widget sr-small">
-                            <div class="sr-image-holder">
-                                <img src="[IMAGESRC]/convert?w=460&h=460&fit=max&quality=100" class="sr-image" title="[NAME]" alt="[NAME]"/>
-                            </div>
-                            <div class="sr-product-details">
-                                <div class="sr-name">[NAME]</div>
-                                <div class="sr-strapline">[STRAPLINE] </div>
-                                <div class="sr-price">[CURRENCY][PRICE]</div>           
-                                <a class="sr-add-link" href="[ADDTOCART]" type="button">
-                                <div class="sr-add"><i class="fa fa-shopping-cart"></i> Buy Now</div>
-                                </a>
-                            </div>                              
-                        </div>
+            <div class="col-sm-12">
+                <h1>Publications</h1>
+                <div class="card">
+                    <div class="card-body">
+                        <strong><h5 class="card-title">The Institutionalized Closetization of Identity</h5></strong>
+                        <p class="card-text">
+                            In this publication we look at the political, economic, and popular culture of the United States dating back to the 1940’s and explore the ramifications of officially policies and their effects on the LGBTQ+ community.</p>
+                            <h6 class="card-subtitle mb-2 text-muted">Written May 2018. Published May 2019</h6>
+                            <a id="pubDownload" href="assets/The Institutionalized Closetization of Identity.pdf">Download Here</a>
                     </div>
-                <!-- SHOPROCKET END -->  
+                </div>
             </div>
         </div>
-    </div>
+    </div>   
 </div>
-<br>
 <br>
 <!-- Footer -->
 <footer>
@@ -196,23 +189,10 @@
                 </div>
             </div>
         </div>
-</footer>
-
+    </footer>
     <!-- Popper -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <!-- Bootstrap JS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
-    <!-- Shoprocket JavaScript -->
-    <script>var $=jQuery.noConflict();</script>
-    <script>var JSR=jQuery;</script>
-    <script language="javascript" src="https://space.shoprocket.co/frontend/v8/sr.min.js"></script>
-    <input type="hidden" name="sr-companyid" id="sr-companyid" value="14901">
-
-    <!-- Shoprocket Basket Widget -->
-    <div id="sr-basket-widget" class="sr-right"><span class="sr-confirm-amount"></span></div>
-
 </body>
 </html>
